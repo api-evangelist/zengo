@@ -1,8 +1,28 @@
 aid: zengo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zengo.png
 name: ZenGo
-description: 'ZenGo is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'ZenGo (also styled Zengo) is a consumer, non-custodial keyless cryptocurrency
+  wallet that replaces the traditional seed phrase with MPC (multi-party computation)
+  threshold signatures, splitting the signing key into two independent secret shares
+  so there is no single point of failure or seed phrase to lose. Through its iOS and
+  Android mobile apps and browser extension, users can buy, sell, trade and store
+  Bitcoin, Ethereum and other crypto assets, connect to Web3 dApps and NFTs, and access
+  features such as prediction markets. Founded circa 2018 (formerly KZen Networks)
+  and backed by Insight Partners, the company also publishes open-source MPC and
+  threshold-signature cryptography research through its ZenGo-X GitHub organization.
+  As a consumer wallet product, ZenGo does not currently expose a public developer
+  or product API.'
 url: https://raw.githubusercontent.com/api-evangelist/zengo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Cryptocurrency
+- Wallet
+- Web3
+- Blockchain
+- Security
+- MPC
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/zengo-domain-security.yml
 - type: Website
   url: https://www.zengo.com/
+- type: Support
+  url: https://help.zengo.com/
+- type: HelpCenter
+  url: https://help.zengo.com/en/
+- type: GitHubOrganization
+  url: https://github.com/ZenGo-X
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
